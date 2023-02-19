@@ -17,16 +17,27 @@
 		<java.version>19</java.version>
 	</properties>
 	<dependencies>
+		<!-- spring-boot-starter-web is dependency group for build RestAPI and Web Application-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- spring-boot-starter-test is dependency group for application testing-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- spring-boot-devtools is dependency to restart your server automatically if any changes in code -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+			<scope>runtime</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
